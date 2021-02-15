@@ -39,37 +39,38 @@
 
             <TableRow>
                 //inputs
-            <EditText
-                android:id="@+id/editTextX4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="40dp"
-                android:layout_marginRight="40dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toStartOf="@+id/editTextY4"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView19"
-                android:layout_marginLeft="32dp" />
 
-            <EditText
-                android:id="@+id/editTextY4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="100dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/editTextX4"
-                app:layout_constraintTop_toBottomOf="@+id/textView19"
-                android:layout_marginRight="100dp" />
+                <EditText
+                    android:id="@+id/editTextX4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextY4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <EditText
+                    android:id="@+id/editTextY4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/editTextX4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
             </TableRow>
 
@@ -111,7 +112,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:layout_marginLeft="37dp"
+                    android:layout_marginLeft="39dp"
                     android:layout_marginTop="16dp"
                     android:layout_weight="1"
                     android:onClick="calcular"
@@ -126,13 +127,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:layout_marginLeft="42dp"
+                    android:layout_marginLeft="52dp"
                     android:layout_marginTop="24dp"
                     android:layout_marginEnd="76dp"
                     android:layout_marginRight="76dp"
                     android:ems="10"
+                    android:enabled="false"
                     android:inputType="textPersonName"
-                    android:textSize="12sp"
+                    android:textColor="#0C0C0C"
+                    android:textSize="14sp"
                     app:layout_constraintBottom_toTopOf="@+id/textView18"
                     app:layout_constraintEnd_toEndOf="parent" />
 
