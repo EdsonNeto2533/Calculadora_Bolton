@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".AnaliseBltonTo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="304dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.005"
+                app:srcCompat="@drawable/analiseboltonto" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Para uma boa estética e função a razão do volume dos 12 dentes inferiores e superiores (6 a 6) deve ser cerca de 91,3%."
+                android:textColor="#090404"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/imageView5"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+            <TableRow>
+                //inputs
+            <EditText
+                android:id="@+id/editTextX4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/editTextY4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19"
+                android:layout_marginLeft="32dp" />
+
+            <EditText
+                android:id="@+id/editTextY4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="100dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editTextX4"
+                app:layout_constraintTop_toBottomOf="@+id/textView19"
+                android:layout_marginRight="100dp" />
+
+            </TableRow>
+
+            <TableRow>
+                //textos
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="80"
+                android:text="Soma 3 a 3 inf"
+                android:textColor="#0B0A0A"
+                app:layout_constraintStart_toStartOf="@+id/editTextX4"
+                app:layout_constraintTop_toBottomOf="@+id/editTextX4" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="100dp"
+                android:layout_weight="5"
+                android:text="Soma 3 a 3 sup."
+                android:textColor="#090909"
+                app:layout_constraintStart_toStartOf="@+id/editTextY4"
+                app:layout_constraintTop_toBottomOf="@+id/editTextY4" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:onClick="calcular"
+                    android:text="Calcular"
+                    android:textColor="#F6FAF6"
+                    app:backgroundTint="#800000"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <EditText
+                    android:id="@+id/editTextResult4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="76dp"
+                    android:layout_marginRight="76dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView18"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:text="Resultado"
+                    android:layout_marginStart="68dp"
+                    android:textColor="#0B0A0A"
+                    android:layout_gravity="end"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView20"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextResult4"
+                    android:layout_marginLeft="68dp" />
+
+            </TableRow>
+
+
+
+
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valores acima de 91,3% revelam excesso de volume dos dentes inferiores. Valores abaixo de 91,3% revelam execesso dos dentes superiores. Comparando com os valores de Bolton Anterior é possível avaliar se o excesso seria anterior ou posterior."
+                android:textColor="#070404"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </TableLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
