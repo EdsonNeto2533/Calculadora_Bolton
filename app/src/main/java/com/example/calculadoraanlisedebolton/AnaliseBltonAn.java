@@ -25,5 +25,11 @@ public class AnaliseBltonAn extends AppCompatActivity {
         v3 = (v1 / v2) * 100;
         ed3.setText(v3.toString());
     }
+    /*
+    fun calcular(v: View){
+    var v1,v2,v3: Double
 
+    }
+
+     */
 }
