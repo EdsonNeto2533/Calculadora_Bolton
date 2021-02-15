@@ -16,7 +16,7 @@ public class AnaliseBltonTo extends AppCompatActivity {
         ed2 = (EditText) findViewById(R.id.editTextY4);
         ed3 = (EditText) findViewById(R.id.editTextResult4);
     }
-
+    //realiza o calculo
     public void calcular(View view){
         Double v1,v2,v3;
         v1 = Double.parseDouble(ed1.getText().toString());
